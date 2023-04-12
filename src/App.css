@@ -7,7 +7,10 @@ h2{
 }
 
 button{
-  margin: 30px 30px;
+  margin-left: 20px;
+  margin-top: 30px;
+  border-radius: 5px;
+  border:1px #a9a9a9 solid,
 }
 
 .App-logo {

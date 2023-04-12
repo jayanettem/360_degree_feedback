@@ -1,6 +1,18 @@
-label {
+label{
     font-family: 'Times New Roman', Times, serif;
     text-align: left;
     margin-left: 20px;
     margin-top: 40px;
+}
+
+textarea{
+    margin-left: 20px;
+    margin-top: 10px;
+    width: 400px;
+    height: 80px;
+}
+
+.cmnt{
+    margin-left: 20px;
+    margin-top: 20px;
 }

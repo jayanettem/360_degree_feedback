@@ -6,14 +6,17 @@ const colors = {
   grey: "#a9a9a9"
 }
 
-const StarRating = () => {
+const StarRating = (props) => {
 
   const stars =Array(5).fill(0);
   const [currentVal, setCurrentVal]=React.useState(0);
   const [hoverVal,setHoverVal]=React.useState(undefined);
 
   const handleClick = value =>{
-    setCurrentVal(value)
+    setCurrentVal(value);
+    let temp=props.starArr;
+    temp.push(value);
+    props.setarr(temp);
   };
 
   const handleMouseOver = value =>{
@@ -23,7 +26,7 @@ const StarRating = () => {
   const handleMouseLeave = () =>{
     setHoverVal(undefined)
   }
-
+  console.log("Value:",currentVal);
   return(
     <div style={styles.container}>
       <div>
